@@ -214,7 +214,7 @@ PaneBody = React.createClass
                 </span>
               </span>
               <div className="ship-slot" style={getStatusStyle @state.label[j]}>
-                <Slotitems fleet={@props.key} key={j} data={ship.api_slot.concat(ship.api_slot_ex || -1)} onslot={ship.api_onslot} maxeq={ship.api_maxeq} />
+                <Slotitems key={j} fleet={@props.key} data={ship.api_slot.concat(ship.api_slot_ex || -1)} slotnum={ship.api_slotnum} onslot={ship.api_onslot} maxeq={ship.api_maxeq} />
               </div>
             </div>
         }
